@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "jost";
+}
+
+.grid-two--cols{
+    display: flex;
+    justify-content: center;
+    
+}
+
+:root{
+    --main-color: #0a2228;
+    --para-color: #504e4d;
+    --supporting-color: #ebf3fe;
+    --bg-color: #fff;
+    --heading-color: #0b182a;
+    --hero-heading-color: #0a043a;
+    --white-color:#ffffff;
+    --btn-hover-bg-color: #003b99;
+    --btn-box-shadow: rgba(100, 100, 111 , 0.2) 0px 7px 29px 0px;
+
+}
+
+ .section-contact--homepage .container:first-child{
+    padding: 0.1rem 0 2.4rem 0;
+} 
+
+
+.section-contact--homepage{
+    width: 70%;
+    min-height: 30rem;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
+    /* margin-bottom: 5rem; */
+    border-radius: 0.3rem;
+    padding: 3.7rem 3.2rem;
+    position: relative;
+    bottom: -10rem;
+    /* margin-bottom: -15rem; */
+    background-color: #f7fcff;
+    z-index: 1;
+    
+
+    & .grid{
+        align-items: center;
+        gap: 6.4rem;
+        
+    }
+}
+
+.btn-button {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    background-color: var(--main-color);
+    color: var(--white-color);
+    border-radius: 0.6rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    
+}
+
+.btn-button:hover {
+    background-color: var(--btn-hover-bg-color);
+    cursor: pointer;
+    box-shadow: var(--btn-box-shadow);
+}
+
+.contact-title{
+    font-size: 2.4rem;
+    line-height: 1.2;
+}
+
+.contact-content p {
+    margin: 1.2rem 0 2.4rem 0;
+}
+
+.section-contact--homepage img{
+    width: 90%;
+    height: auto;
+}
+
+
+
+@media (max-width: 998px) {
+    .grid-two--cols {
+        flex-direction: column; /* Change flex direction to column */
+    }
+
+    .section-contact--homepage{
+        margin-top: -100px;
+    }
+
+    .section-contact--homepage .container:first-child {
+        padding: 1.4rem 0 1.4rem 0rem; /* Adjust padding as needed */
+    }
+
+    .contact-title {
+        font-size: 2.1rem;
+    }
+
+    .btn-button {
+        padding: 0.1rem 0rem;
+         border-radius: 0.2rem;
+       }
+
+
+}

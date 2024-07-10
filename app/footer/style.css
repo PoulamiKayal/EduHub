@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "jost";
+}
+
+/* .grid-two--cols{
+    display: flex;
+    justify-content: center;
+    
+} */
+
+:root{
+    --main-color: #0a2228;
+    --para-color: #504e4d;
+    --supporting-color: #ebf3fe;
+    --bg-color: #fff;
+    --heading-color: #0b182a;
+    --hero-heading-color: #0a043a;
+    --white-color:#ffffff;
+    --btn-hover-bg-color: #003b99;
+    --btn-box-shadow: rgba(100, 100, 111 , 0.2) 0px 7px 29px 0px;
+    --footer-bg--color: #040d12;
+
+}
+
+footer{
+    background-color: var(--footer-bg--color);
+    padding-top: 3rem;
+}
+
+footer *{
+    color: white;
+    text-decoration: none;
+   
+}
+
+footer .grid{
+    text-align: right;
+   
+}
+
+.footer-subheading{
+    font-size: 1.9rem;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.footer-1--div p{
+    margin: 1rem 0 3.2rem 0;
+}
+
+.footer-1--div{
+    text-align: left;
+
+    & .social-footer--icons{
+        display: flex;
+        gap:2.4rem;
+        
+   
+
+    & .logo-app{
+        padding: 0.6rem;
+        width: 2.9rem;
+        height: auto;
+        color: var(--white-color);
+        background-color: var(--btn-hover-bg-color);
+       
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all .3s linear;
+        
+        &:hover{
+            color: var(--bg-color);
+            background-color: var(--para-color) ;
+            rotate: 360deg;
+        }
+        
+    }
+
+}
+}
+
+
+
+
+@media (max-width: 1100px) {
+    .grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; /* Distribute items evenly with space between */
+    }
+    footer{
+        padding-bottom: -100px;
+    }
+
+    .footer-2--div,
+    .footer-3--div,
+    .footer-4--div {
+        flex-basis: calc(33.33% - 20px); /* Each footer section takes up one-third of the container width with some margin */
+        margin-bottom: 20px; /* Add some space at the bottom */
+    }
+
+    .footer-1--div {
+        text-align: center;
+        order: 2; /* Move footer-1--div to the second position */
+        text-align: center; /* Center-align footer-1--div */
+        flex-basis: calc(100% - 20px); /* Make it take full width minus margin */
+
+        
+        & .social-footer--icons{
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             gap:2.4rem;
+
+          
+    }
+
+    
+}
+}
+
+

@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "jost";
+}
+
+:root{
+    --main-color: #0a2228;
+    --para-color: #504e4d;
+    --supporting-color: #ebf3fe;
+    --bg-color: #e4f3fd;
+    --heading-color: #0b182a;
+    --hero-heading-color: #0a043a;
+    --white-color:#ffffff;
+    --btn-hover-bg-color: #003b99;
+    --btn-box-shadow: rgba(100, 100, 111 , 0.2) 0px 7px 29px 0px;
+
+}
+
+.section-course .container:first-child{
+    padding: 0.4rem 2.4rem ;
+}
+
+.section-course {
+    background-color:#f7fcff;
+}
+
+.section-course .grid{
+    gap: 1.8rem;
+} 
+
+.section-course .course-div:hover{
+    box-shadow: var(--btn-box-shadow);
+}
+
+.section-course .course-div{
+    padding: 1.8rem;
+    
+}
+
+.logo{
+    padding: 0.8rem;
+    background-color: var(--supporting-color);
+    font-size: 3.5rem;
+    border-radius: 50%;
+    color: var(--hero-heading-color);
+    transition: all 0.6s linear;
+}
+.logo:hover {
+    transform: rotateY(360deg);
+    /* background: linear-gradient(to right ,#0575e6, #021b79); */
+}
+
+/* .course-div:hover{
+transform: rotate(360deg);
+} */
+
+.grid-four--cols{
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.course-div:nth-child(1) .icon .logo{
+     color: #68bf9b;
+     background-color: #e7f6ef;
+}
+
+.course-div:nth-child(2) .icon .logo{
+    color: #fbc56e;
+    background-color: #f0e6d6;
+}
+
+.course-div:nth-child(3) .icon .logo{
+    color: #f59ad7;
+    background-color: #f5d2f0;
+}
+
+.course-div:nth-child(4) .icon .logo{
+    color: #89b4ef;
+    background-color: #c2d4f6;
+}
+
+.course-div:nth-child(5) .icon .logo{
+    color: #fff170;
+    background-color: #f9fce1;
+}
+
+.course-div:nth-child(6) .icon .logo{
+    color: #dd81fa;
+    background-color: #eac1f4;
+}
+
+.course-div:nth-child(7) .icon .logo{
+    color: #77efff;
+    background-color: #bcf6f0;
+}
+.course-div:nth-child(8) .icon .logo{
+    color: #adfb93;
+    background-color: #e4ffe1;
+}
+
+/* .grid-four--cols{
+    grid-template-columns: 1fr;
+} */
+
+
+ @media( width <= 1100px){
+    .section-course .grid-four--cols{
+        grid-template-columns: repeat(auto-fit ,minmax(250px, 1fr));
+    }
+    
+} 
+
+/* @media ( width <= 786px){
+    .section-course .section-common--title{
+        font-size: 4.6rem;
+    }
+} */
